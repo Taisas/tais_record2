@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Tais Record</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="header">
+    <img src="./assets/svg/logo2.svg" alt=""class="logo">
+    <ul>
+        <li><a href="#" class="button"><img src="assets/svg/ico_fb.svg" alt="Facebook" width="25px" height="25px"></a></li>
+        <li><img src="assets/svg/ico_tw.svg" alt="Twitter" width="25px" height="25px" class="button"></li>
+        <li><img src="assets/svg/ico_insta.svg" alt="Instagram" width="25px" height="25px" class="button"></li>
+        <li><img src="assets/svg/ico_mail.svg" alt="Mail" width="25px" height="25px" class="button"></li>
+    </ul>
+</header>
+
+<div class="loading__caontaner" id="loading">
+    <div class="loading loading__backgound">
+        <img src="assets/svg/loadingBackgorund.svg" alt="" class="loading__record" id="loadingRecord">
+        <div class="loading loading__text" id="loadingText">
+            <ul>
+                <li>Loading Images</li>
+                <li>
+                    <div class="loading__bar__container">
+                        <div class="loading__bar__bg"></div>
+                        <div class="loading__bar" id="loadingBar"></div>
+                    </div>
+                </li>
+                <li><span id="parcent">0</span>%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="detail__panel">
+    <div class="button button__close" id="buttonClose">
+        <ul>
+            <li>閉じる</li>
+            <li><img src="assets/svg/b_close.svg" alt=""></li>
+        </ul>
+    </div>
+</div>
+<div class="backgorund" id="detailBackground"></div>
+
+<div id="imageContainer">
+    <div id="imageImages">
+    </div>
+</div>
+
+<div class="imitation__header"></div>
+<div class="imitation__footer"></div>
+
+<footer>© 2023 taisas</footer>
+
+<script src="bundle.js"></script>
+</body>
+</html>
