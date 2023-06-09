@@ -142,18 +142,45 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   display: flex;
   flex-wrap: wrap; }
 
-.image {
+.image__wrap {
   filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6));
   position: relative;
   z-index: 1;
   cursor: pointer;
-  border-radius: 2px; }
+  border-radius: 2px;
+  line-height: 0; }
 
 .image__hover:hover {
   z-index: 2;
-  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.95));
   transform: scale(1.25, 1.25);
   transition-duration: 0.4s; }
+
+.image__wrap:hover .image__caption__mask {
+  opacity: 1; }
+
+.image__caption__mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #ffffff66;
+  transition: all 0.2s ease; }
+
+.image__caption {
+  width: 100%;
+  height: 25px;
+  background-color: #000000;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Noto Serif JP", serif;
+  color: #fff; }
+  .image__caption > p {
+    position: relative;
+    top: 11px; }
 
 .image__sp {
   width: 50%; }
@@ -180,6 +207,7 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   padding: 8px;
   font-weight: bold;
   font-size: 12px;
+  font-family: "Noto Serif JP", serif;
   color: #ffffff;
   background-color: #000000;
   position: absolute;
@@ -192,6 +220,7 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   padding: 8px;
   opacity: 0;
   font-size: 13px;
+  font-family: "Noto Serif JP", serif;
   color: #ffffff;
   background-color: #000000;
   position: absolute;
@@ -204,7 +233,6 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   display: none;
   z-index: 300;
   width: 100%;
-  height: 100%;
   top: 0px;
   padding-top: 90px; }
 
@@ -232,7 +260,7 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   text-align: center;
   top: 52%;
   left: calc(50% - 150px);
-  font-family: "Shippori Antique B1";
+  font-family: "Noto Serif JP", serif;
   color: #ffffff;
   font-size: 12px; }
 
@@ -250,7 +278,7 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
     position: relative;
     background-color: #F8F6E8;
     font-size: 12px;
-    font-family: "Shippori Antique B1";
+    font-family: "Noto Serif JP", serif;
     color: #000000;
     z-index: 600;
     align-content: center; }
@@ -258,4 +286,13 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
       display: flex;
       justify-items: center;
       gap: 6px; }
+
+.close__btn__sp {
+  position: relative;
+  display: flex;
+  justify-content: end; }
+  .close__btn__sp > img {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px; }
 
