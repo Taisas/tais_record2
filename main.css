@@ -246,6 +246,10 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
   font-size: 14px;
   padding: 12px;
   line-height: 1.8; }
+  .detail__panel__sp__text > img {
+    width: 40%;
+    margin-right: 14px;
+    float: left; }
 
 .explanation__mouse {
   position: absolute;
@@ -295,4 +299,27 @@ h1, h2, h3, h4, h5, h6, p, figure, ul {
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 20px; }
+
+.start__explain {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  top: calc(50% - 15px);
+  left: calc(50% - 150px);
+  background-color: #000000;
+  z-index: 300; }
+  @media screen and (min-width: 576px) {
+    .start__explain {
+      width: 460px;
+      height: 30px;
+      left: calc(50% - 230px); } }
+  .start__explain > p {
+    margin-top: 5px;
+    position: relative;
+    font-size: 14px;
+    font-family: "Noto Serif JP", serif;
+    color: #ffffff;
+    opacity: 0; }
 
